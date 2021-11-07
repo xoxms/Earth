@@ -13,7 +13,7 @@ fetch(`https://api.nasa.gov/EPIC/api/natural?api_key=${apiKey}`)
     const year = d[0].identifier.slice(0, 4);
     const month = d[0].identifier.slice(4, 6);
     const day = d[0].identifier.slice(6, 8);
-    const image = `https://api.nasa.gov/EPIC/archive/natural/${year}/${month}/${day}/png/epic_1b_20211105002712.png?api_key=${apiKey}`
+    const image = `https://api.nasa.gov/EPIC/archive/natural/${year}/${month}/${day}/png/${d[0].image}.png?api_key=${apiKey}`
     
     const readme = await octokit.rest.repos.getReadme({
       owner: "tinvv",
