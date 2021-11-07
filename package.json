@@ -2,7 +2,7 @@
   "name": "Earth",
   "version": "1.0.0",
   "description": "Fetch random image from Nasa API",
-  "main": "main.js",
+  "main": "main.mjs",
   "author": "Tinnaphat Somsang",
   "license": "Apache-2.0",
   "dependencies": {

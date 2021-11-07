@@ -29,4 +29,4 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         NASA_TOKEN: ${{ secrets.NASA_TOKEN }}
-      run: node main.js
+      run: node main.mjs
