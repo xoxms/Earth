@@ -1,0 +1,32 @@
+name: Run
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  run:
+    name: Update
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16.x
+        cache: 'yarn'
+
+    - name: Install Dependencies 📦
+      run: yarn
+
+    - name: Execute
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        NASA_TOKEN: ${{ secrets.NASA_TOKEN }}
+      run: node main.js

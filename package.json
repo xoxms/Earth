@@ -1,0 +1,12 @@
+{
+  "name": "Earth",
+  "version": "1.0.0",
+  "description": "Fetch random image from Nasa API",
+  "main": "main.js",
+  "author": "Tinnaphat Somsang",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@octokit/rest": "^18.12.0",
+    "node-fetch": "^3.0.0"
+  }
+}
