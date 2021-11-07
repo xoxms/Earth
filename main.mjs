@@ -36,10 +36,10 @@ fetch(`https://api.nasa.gov/EPIC/api/natural?api_key=${apiKey}`)
       start_line + 1,
       end_line - start_line - 1,
       `# Updated at 
-      ${day}/${month}/${year} <br> 
-      # Info
-      ${d[0].caption} <br> 
-      ![earth](${image}) `
+${day}/${month}/${year} <br> 
+# Info
+${d[0].caption} <br> 
+![earth](${image}) `
     )
 
     const modify = data.join("\n");
