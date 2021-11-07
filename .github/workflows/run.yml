@@ -3,12 +3,14 @@ name: Run
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/30 * * * *"
   push:
     branches: [main]
   pull_request:
     branches: [main]
-
+  watch:
+    types: [started]
+    
 jobs:
   run:
     name: Update
