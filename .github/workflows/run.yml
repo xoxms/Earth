@@ -3,7 +3,7 @@ name: Run
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/60 * * * *"
   push:
     branches: [main]
   pull_request:
@@ -13,7 +13,7 @@ on:
     
 jobs:
   run:
-    name: Update
+    name: Run
     runs-on: ubuntu-latest
 
     steps:
