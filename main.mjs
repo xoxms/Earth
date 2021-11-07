@@ -35,7 +35,7 @@ fetch(`https://api.nasa.gov/EPIC/api/natural?api_key=${apiKey}`)
     data.splice(
       start_line + 1,
       end_line - start_line - 1,
-      `![earth](${image})`
+      `![earth](${image})\nImage taken at : ${day}/${month}/$[year}\nInfo : ${d[0].caption}`
     )
 
     const modify = data.join("\n");
