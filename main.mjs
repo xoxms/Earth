@@ -44,7 +44,7 @@ ${d[0].caption} <br>
 
     const modify = data.join("\n");
     octokit.rest.repos.createOrUpdateFileContents({
-      owner: "tinvv",
+      owner: "mulforma",
       repo: "Earth",
       path: "README.md",
       branch: "main",
