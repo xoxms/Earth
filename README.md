@@ -3,8 +3,8 @@ Get latest earth image from NasaAPI
 
 <!-- Earth Image Update -->
 # Updated at 
-23/11/2023 <br> 
+24/11/2023 <br> 
 # Info
 This image was taken by NASA's EPIC camera onboard the NOAA DSCOVR spacecraft <br> 
-![earth](https://api.nasa.gov/EPIC/archive/natural/2023/11/23/png/epic_1b_20231123000830.png?api_key=V80HNcPBnQWG82pxQoF7UZtXG7ga5XaLHQehkKXG) 
+![earth](https://api.nasa.gov/EPIC/archive/natural/2023/11/24/png/epic_1b_20231124002712.png?api_key=V80HNcPBnQWG82pxQoF7UZtXG7ga5XaLHQehkKXG) 
 <!-- /Earth Image Update -->
